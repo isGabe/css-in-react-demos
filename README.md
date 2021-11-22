@@ -4,6 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is a collection of some simple demos of different wasy to use CSS in React.
 
+To get started:
+
+- Clone this repository: `$ git clone git@github.com:isGabe/css-in-react-demos.git`
+- Install dependencies: in the project root, run `$ yarn` or `$ npm i`
+- Start the dev server: `$ yarn start` or `$npm run start`
+
 ## Available Scripts
 
 In the project directory, you can run:
