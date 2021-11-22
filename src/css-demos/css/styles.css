@@ -26,7 +26,7 @@
  * The same is true for other generic element selectors in this stylesheet.
  */
 section {
-  border-left: solid 6px var(--color);
+  border-left: solid 6px var(--color, #ccc);
   padding-left: 20px;
 }
 
