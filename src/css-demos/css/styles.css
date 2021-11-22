@@ -2,9 +2,9 @@
  * This will apply to vanila CSS and vanilla SCSS with plain string classnames.
  */
 .wrapper {
-  padding-bottom: 40px;
-  margin-bottom: 40px;
   border-bottom: solid 1px #ddd;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .colorPicker span {
@@ -13,6 +13,8 @@
 }
 
 .title {
+  /* The --color CSS custom property is set in the component. */
+  color: var(--color);
   margin-top: 0;
 }
 
@@ -24,7 +26,7 @@
  * The same is true for other generic element selectors in this stylesheet.
  */
 section {
-  border-left: solid 6px #eee;
+  border-left: solid 6px var(--color);
   padding-left: 20px;
 }
 

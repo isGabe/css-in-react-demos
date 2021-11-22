@@ -2,14 +2,14 @@ import { useState } from 'react';
 import './styles.css';
 
 const VanillaCSS = () => {
-  const [color, setColor] = useState('#bada55');
+  const [color, setColor] = useState('#333');
+  // We can set the color as a CSS custom property like this:
+  const style = { '--color': color } as React.CSSProperties;
   return (
-    <div className="wrapper css">
-      <h1 className="title" style={{ color: color }}>
-        Vanilla CSS
-      </h1>
+    <div className="wrapper css" style={style}>
+      <h1 className="title">Vanilla CSS</h1>
 
-      <section className="section" style={{ borderColor: color }}>
+      <section className="section">
         <label htmlFor="headlineColor" className="colorPicker">
           <span>Pick a title color</span>
           <input
