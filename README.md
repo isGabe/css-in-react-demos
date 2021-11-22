@@ -8,7 +8,7 @@ To get started:
 
 - Clone this repository: `$ git clone git@github.com:isGabe/css-in-react-demos.git`
 - Install dependencies: in the project root, run `$ yarn` or `$ npm i`
-- Start the dev server: `$ yarn start` or `$npm run start`
+- Start the dev server: `$ yarn start` or `$ npm run start`
 
 ## Available Scripts
 
