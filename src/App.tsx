@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import VanillaCSS from './css-demos/css';
 import CSSModules from './css-demos/css-modules';
 import VanillaSCSS from './css-demos/scss';

@@ -1,0 +1,28 @@
+.wrapper {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: solid 1px #ddd;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.section {
+  border-left-color: #ccc;
+}
+
+.section img {
+  float: right;
+  margin: 0 0 20px 20px;
+  max-width: 30%;
+}
+
+/**
+ * This puts a top margin on img elements if they follow another element.
+ * This is done because generally you want vertical spacing between elements, but not
+ * on the first or last elements.
+ */
+.section * + img {
+  margin-top: 20px;
+}

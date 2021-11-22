@@ -1,10 +1,13 @@
+$border-color: #bada55;
+
 .wrapper {
 }
 
 .title {
 }
 
-section {
+.section {
+  border-left-color: $border-color;
 }
 
 p {

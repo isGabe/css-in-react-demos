@@ -1,11 +1,65 @@
+/**
+ * This will apply to vanila CSS and vanilla SCSS with plain string classnames.
+ */
 .wrapper {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: solid 1px #ddd;
+}
+
+.colorPicker span {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .title {
+  margin-top: 0;
 }
 
+/**
+ * Since this is vanilla CSS, and it's a general element selector,
+ * it will apply to all <section> elements on the page, not just the one
+ * in the component that imports this stylesheet.
+
+ * The same is true for other generic element selectors in this stylesheet.
+ */
 section {
+  border-left: solid 6px #eee;
+  padding-left: 20px;
+}
+
+/**
+ * clearfix
+ * https://css-tricks.com/snippets/css/clear-fix/
+ */
+section:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+section img {
+  float: left;
+  margin: 0 20px 20px 0;
+  max-width: 30%;
+}
+
+/**
+ * This puts a top margin on img elements if they follow another element.
+ * This is done because generally you want vertical spacing between elements, but not
+ * on the first or last elements.
+ */
+section * + img {
+  margin-top: 20px;
 }
 
 p {
+  margin: 0;
+}
+
+/**
+ * Same as above, this puts a top margin on img elements if they follow another element.
+ */
+section * + p {
+  margin-top: 1rem;
 }
